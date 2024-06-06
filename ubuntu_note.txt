@@ -1,0 +1,16 @@
+Install neovim
+sudo snap install nvim --classic
+
+Ubuntu
+in ~/.config/nvim/lua/theprimeagen/set.lua
+change to [vim.opt.undofir = os.getenv("HOME) .. "/.vim.undodir"]
+
+1. run dev file: 
+./dev
+
+2. in packer.lua:
+run :so :PackerSync
+
+3.Install nodejs, npm
+sudo apt install nodejs
+sudo apt install npm
