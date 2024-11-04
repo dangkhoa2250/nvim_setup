@@ -21,3 +21,5 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 7. move to packer.lua and run
 :so
 :PackerSync
+
+8. move settings.json to C:\Users\dangk\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState to setup powershell
