@@ -1,0 +1,23 @@
+1. install scoop
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+2. install git
+scoop install git
+
+3. clone nvim_setup
+git clone https://github.com/dangkhoa2250/nvim_setup.git
+
+4. install scoop packages
+scoop import scoop-packages.json
+
+5. move nvim_setup.git to C:\Users\dangk\AppData\Local
+mv nvim_setup C:\Users\dangk\AppData\Local
+mv nvim_setup nvim
+
+6. install packer 
+git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+
+7. move to packer.lua and run
+:so
+:PackerSync
